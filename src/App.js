@@ -1,19 +1,13 @@
+import React, { useState, useEffect, useReducer } from 'react';
 import './App.css';
 
-function SecretComponent() {
-  return <h1>Secret Component</h1>
-}
-
-function RegularComponent() {
-  return <h1>Regular Component</h1>
-}
-
-function App({authorized}) {
+function App() {
   return (
     <>
-  {authorized ? <SecretComponent /> : <RegularComponent />}
-  </>
+      <h1>Hello React Testing Library</h1>
+    </>
   )
 }
+
 
 export default App;
