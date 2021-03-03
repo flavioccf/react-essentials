@@ -1,6 +1,5 @@
 import React from 'react';
-import { Link, useLocation,   useParams,
-    useRouteMatch ,Switch, Route} from "react-router-dom";
+import { Link, useLocation, useRouteMatch ,Switch, Route} from "react-router-dom";
 
 function LinkNav() {
     return (    <nav>
