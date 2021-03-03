@@ -1,10 +1,24 @@
-import React, { useState, useEffect, useReducer } from 'react';
+import React from 'react';
 import './App.css';
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  Home, About, Events, Contact, Whoops404
+} from "./pages";
 
 function App() {
   return (
     <>
-      <h1>Hello React Testing Library</h1>
+      <Router>
+        <Switch>
+          <Route exact path="/" ><Home /></Route>
+          <Route path="/about">
+            <About />
+          </Route>
+          <Route path="/events"><Events /></Route>
+          <Route path="/contact" ><Contact /></Route>
+          <Route path="*" ><Whoops404 /></Route>
+        </Switch>
+      </Router>
     </>
   )
 }
