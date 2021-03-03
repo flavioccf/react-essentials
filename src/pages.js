@@ -76,7 +76,7 @@ export function About() {
     // path of `/topics/:topicId`. The `:topicId` portion
     // of the URL indicates a placeholder that we can
     // get from `useParams()`.
-    let { topicId } = useParams();
+    // let { topicId } = useParams();
     let topic = <Events/>
   
     return (
